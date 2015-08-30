@@ -1,0 +1,10 @@
+<android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingBottom="@dimen/tipcard_list_padding_vertical"
+    android:paddingLeft="@dimen/tipcard_list_padding_horizontal"
+    android:paddingRight="@dimen/tipcard_list_padding_horizontal"
+    android:paddingTop="@dimen/tipcard_list_padding_vertical"
+    android:scrollbars="vertical" />

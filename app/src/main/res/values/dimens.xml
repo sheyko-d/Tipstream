@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- General -->
+    <dimen name="tipcard_list_padding_vertical">8dp</dimen>
+    <dimen name="tipcard_list_padding_horizontal">4dp</dimen>
+    <dimen name="tipcard_margin">4dp</dimen>
+    <dimen name="tipcard_padding">12dp</dimen>
+    <dimen name="drawer_avatar_height_width">64dp</dimen>
+
+    <!-- Main screen -->
+    <dimen name="main_tab_txt_size">12sp</dimen>
+
+</resources>

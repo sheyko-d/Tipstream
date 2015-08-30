@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_tabs">
+        <item>All tipcards</item>
+        <item>Friends tipcards</item>
+        <item>Saved tipcards</item>
+        <item>My tipcards</item>
+    </string-array>
+</resources>

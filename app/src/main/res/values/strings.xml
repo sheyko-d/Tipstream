@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Tipstream</string>
+
+    <!-- Main screen -->
+    <string name="main_drawer_tipcards">Tipcards</string>
+    <string name="main_drawer_messages">Messages</string>
+    <string name="main_drawer_account">My account</string>
+    <string name="menu_action_near_on">Show tipcards near me</string>
+    <string name="menu_action_near_off">Show all tipcards</string>
+
+    <!-- Create a Tipcard screen -->
+    <string name="title_activity_create">Create a Tipcard</string>
+    <string name="menu_action_create">Create</string>
+
+    <!-- Messages screen -->
+    <string name="title_activity_messages">Messages</string>
+
+</resources>

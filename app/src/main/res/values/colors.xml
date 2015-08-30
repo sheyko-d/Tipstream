@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#E91E63</color>
+    <color name="primary_dark">#C2185B</color>
+    <color name="accent">#FFAB00</color>
+
+    <color name="primary_text">#3F3F3F</color>
+    <color name="gray_1">#999999</color>
+    <color name="gray_2">#DCDCDC</color>
+
+    <color name="bg">#F1F1F1</color>
+    <!-- TODO: Replace with cardboard texture? -->
+    <color name="card_bg">#FBFBFB</color>
+    <color name="avatar_placeholder">#DDD</color>
+</resources>

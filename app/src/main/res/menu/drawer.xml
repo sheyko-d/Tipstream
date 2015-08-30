@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_tipcards"
+            android:checked="true"
+            android:icon="@drawable/ic_drawer_tipcards"
+            android:title="@string/main_drawer_tipcards" />
+        <item
+            android:id="@+id/drawer_messages"
+            android:icon="@drawable/ic_drawer_messages"
+            android:title="@string/main_drawer_messages" />
+        <item
+            android:id="@+id/drawer_account"
+            android:icon="@drawable/ic_drawer_account"
+            android:title="@string/main_drawer_account" />
+    </group>
+</menu>

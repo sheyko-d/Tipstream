@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingPrefix">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/tipcard_margin"
+        app:cardBackgroundColor="@color/card_bg"
+        app:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/tipcard_share_btn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/circular_ripple"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_share"
+                android:tint="@color/primary" />
+
+            <ImageButton
+                android:id="@+id/tipcard_favorite_btn"
+                style="?attr/borderlessButtonStyle"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="-8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@+id/tipcard_share_btn"
+                android:layout_toStartOf="@+id/tipcard_share_btn"
+                android:background="@drawable/circular_ripple"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_favorite"
+                android:tint="@color/accent" />
+
+            <RelativeLayout
+                android:id="@+id/tipcard_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/tipcard_padding">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/tipcard_avatar_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginRight="12dp" />
+
+                <TextView
+                    android:id="@+id/tipcard_title_txt"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_toEndOf="@+id/tipcard_avatar_img"
+                    android:layout_toRightOf="@+id/tipcard_avatar_img"
+                    android:includeFontPadding="false"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tipcard_username_txt"
+                    fontPath="fonts/Roboto-Medium.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tipcard_title_txt"
+                    android:layout_alignStart="@+id/tipcard_title_txt"
+                    android:layout_below="@+id/tipcard_title_txt"
+                    android:layout_marginBottom="3dp"
+                    android:textColor="@color/gray_1"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tipcard_comment_txt"
+                    fontPath="fonts/Roboto-Regular.ttf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tipcard_username_txt"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="3dp"
+                    android:textColor="@color/primary_text"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/tipcard_divider"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@+id/tipcard_content_layout"
+                android:background="@color/gray_2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tipcard_divider"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_location" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/tipcard_name_txt"
+                        fontPath="fonts/Roboto-Medium.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/gray_1"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tipcard_address_txt"
+                        fontPath="fonts/Roboto-Regular.ttf"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:textColor="@color/gray_2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</FrameLayout>

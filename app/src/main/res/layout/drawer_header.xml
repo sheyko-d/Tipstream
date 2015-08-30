@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:background="@color/primary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="MissingPrefix">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/drawer_avatar_img"
+            android:layout_width="@dimen/drawer_avatar_height_width"
+            android:layout_height="@dimen/drawer_avatar_height_width"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@null"
+            app:border_color="@android:color/white"
+            app:border_width="1dp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/drawer_name_txt"
+        fontPath="fonts/Roboto-Medium.ttf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="letitia.romero52@example.com"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+</LinearLayout>
