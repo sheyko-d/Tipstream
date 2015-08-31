@@ -1,5 +1,6 @@
 package com.tipstream;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -14,6 +15,7 @@ import android.view.MenuItem;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MessagesActivity extends AppCompatActivity implements
         NavigationView.OnNavigationItemSelectedListener {

@@ -9,7 +9,7 @@
     <string name="menu_action_near_off">Show all tipcards</string>
 
     <!-- Create a Tipcard screen -->
-    <string name="title_activity_create">Create a Tipcard</string>
+    <string name="title_activity_create">New tipcard</string>
     <string name="menu_action_create">Create</string>
 
     <!-- Messages screen -->

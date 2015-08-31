@@ -12,4 +12,6 @@
     <!-- TODO: Replace with cardboard texture? -->
     <color name="card_bg">#FBFBFB</color>
     <color name="avatar_placeholder">#DDD</color>
+    <color name="menu_action">#AAFFFFFF</color>
+
 </resources>
