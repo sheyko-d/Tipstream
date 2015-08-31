@@ -19,6 +19,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.text.Spannable;
 import android.text.SpannableString;
+import android.text.style.RelativeSizeSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -29,6 +30,8 @@ import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 import com.tipstream.util.TypefaceSpan;
+
+import java.util.Locale;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
@@ -79,13 +82,17 @@ public class MainActivity extends AppCompatActivity implements
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
             actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+            actionBar.setDisplayShowTitleEnabled(false);
 
-            SpannableString s = new SpannableString(getString(R.string.app_name));
-            s.setSpan(new TypefaceSpan(this, "fonts/Roboto-Medium.ttf"), 0, s.length(),
+            SpannableString s = new SpannableString(getString(R.string.app_name)
+                    .toLowerCase(Locale.getDefault()));
+            s.setSpan(new TypefaceSpan(this, "fonts/Bobbiefreebie.ttf"), 0, s.length(),
+                    Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
+            s.setSpan(new RelativeSizeSpan(1.6f), 0, s.length(),
                     Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
 
             // Update the action bar title with the TypefaceSpan instance
-            actionBar.setTitle(s);
+            //actionBar.setTitle(s);
         }
     }
 
@@ -113,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements
 
     }
 
-    private void initFAB(){
+    private void initFAB() {
         mFAB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
