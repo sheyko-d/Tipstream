@@ -5,13 +5,15 @@
     android:layout_height="160dp"
     android:background="@color/primary"
     android:orientation="vertical"
-    android:padding="16dp"
     tools:ignore="MissingPrefix">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/drawer_avatar_img"
@@ -26,8 +28,12 @@
     <TextView
         android:id="@+id/drawer_name_txt"
         fontPath="fonts/Roboto-Medium.ttf"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:onClick="logIn"
+        android:padding="16dp"
         android:text="letitia.romero52@example.com"
         android:textColor="@android:color/white"
         android:textSize="14sp" />

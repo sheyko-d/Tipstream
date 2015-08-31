@@ -144,8 +144,8 @@ public class MainActivity extends AppCompatActivity implements
             }
 
             private void navigate(int itemId) {
-                if (itemId == R.id.drawer_tipcards) {
-                    startActivity(new Intent(MainActivity.this, CreateActivity.class));
+                if (itemId == R.id.drawer_messages) {
+                    startActivity(new Intent(MainActivity.this, MessagesActivity.class));
                     finish();
                 }
             }
@@ -195,6 +195,10 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     protected void attachBaseContext(Context newBase) {
         super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    public void logIn(View v) {
+        startActivity(new Intent(MainActivity.this, LoginActivity.class));
     }
 
 }
